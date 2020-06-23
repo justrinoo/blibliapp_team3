@@ -1,0 +1,454 @@
+{
+	"FlashSale": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Sendal",
+			"imageUrls": "/images/.jpg",
+			"discount": "75% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"ProdukRekomendasi": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"NewNormal": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"ConsummerGoods": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"LifeStyle": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"GadgetAndAksesoris": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"Otomotif": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"VoucherAndTravel": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"HomeAndLiving": [
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		},
+		{
+			"_id": "asd1293uasdads1",
+			"name": "Sendal Jepit",
+			"type": "Tas",
+			"imageUrls": "/images/.jpg",
+			"discount": "60% OFF",
+			"sale": "10.000",
+			"price": "Rp33.000",
+			"isStock": "true"
+		}
+	],
+	"Star": {
+		"name": "Whistlist",
+		"rate": 3.9
+	}
+}
