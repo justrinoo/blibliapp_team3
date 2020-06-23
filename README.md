@@ -3,8 +3,7 @@
 ### Cara clone Project: 
 
 1. klik fork diatas itu accept ke repositroy 
-2. selesai fork, masuk di kiri ada bacaan branch klik terus masuk ke LandingPages
-3.terus git clone linkgit
+2. selesai fork, masuk di kiri ada bacaan branch klik terus masuk ke LandingPages terus git clone linkgit
 4. and happy coding 
 
 ### cara push project:
