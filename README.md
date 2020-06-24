@@ -15,5 +15,7 @@
 
 1. masuk ke folder frontend (cd frontend) lakukan npm install
 2. masuk ke folder backend (cd backend) npm install
+3. Running server frontend (cd frontend) npm start
+4. Running server backend (cd backend) nodemon
 
 ### Thanks
