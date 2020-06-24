@@ -2,15 +2,18 @@
 
 ### Cara clone Project: 
 
-1. klik fork diatas itu accept ke repositroy 
-2. selesai fork, masuk di kiri ada bacaan branch klik terus masuk ke LandingPages terus git clone linkgit
-4. and happy coding 
+1.Clone Project seperti biasa git clone <linkgit>
+2.happy coding
 
-### cara push project:
+### Cara integrasi ke team:
 
-1. bikin branch sesuai tugas kalian 
-   Contoh: Tugas Header: bikin branch Header
-2. pindah branch dengan cara, git checkout namabranch
-3. add,commit,push project
+1. ketika sudah clone bikin sesuai tugas masing masing
+2. ketika mau di upload ke git di push dulu tugas kalian
+4. terus git pull https://github.com/yaelahno/blibliapp_team3.git
+
+### Cara mengerjakan Project
+
+1. masuk ke folder frontend (cd frontend) lakukan npm install
+2. masuk ke folder backend (cd backend) npm install
 
 ### Thanks
