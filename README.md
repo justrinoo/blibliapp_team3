@@ -2,7 +2,7 @@
 
 ### Cara clone Project: 
 
-1.Clone Project seperti biasa git clone <linkgit>
+1.Clone Project seperti biasa git clone ### linkgit
 2.happy coding
 
 ### Cara integrasi ke team:
