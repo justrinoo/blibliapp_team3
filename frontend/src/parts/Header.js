@@ -6,13 +6,44 @@ import Logo from '../assets/images/blibli-logo.svg'
 import Search from "../assets/images/search.svg"
 import Kategori from "../assets/images/kategori.svg"
 import Bag from "../assets/images/bag.svg"
-import '../assets/css/bootstrap.css';
-
+import Button from "../elements/Button";
 
 export default function Header() {
 
 	return (
 		<header>
+				<nav
+				class="navbar navbar-expand-lg navbar-light navbar-text"
+				style={{ height: "30px" }}
+			>
+				<span>Download Aplikasi Blibli</span>
+				<span className="ml-5">Bantuan 24/7</span>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto ">
+						<li class="nav-item ">
+							<span className="nav-link text-white">Jual diblibli</span>
+						</li>
+						<li class="nav-item">
+							<span className="nav-link text-white">Blibli Rewards</span>
+						</li>
+						<li class="nav-item">
+							<span className="nav-link text-white">Cek Daftar Pesanan</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
 			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 				<img src={Logo} alt="logo" width={114} />
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +82,6 @@ export default function Header() {
 						</div>
 							<input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" />
 					</div>
-
-
 
 						<span>
 							<img src="" alt="" />

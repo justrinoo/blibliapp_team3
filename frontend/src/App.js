@@ -1,5 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import LandingPages from "./pages/LandingPages";
+import "./assets/scss/style.scss";
 
-export default function App() {
-	return <div>test</div>;
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<LandingPages />
+			</div>
+		);
+	}
 }
