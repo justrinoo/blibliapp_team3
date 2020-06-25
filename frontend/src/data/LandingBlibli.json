@@ -4,7 +4,7 @@
 	},
 	"FlashSale": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Sendal",
 			"imageUrls": "/images/.jpg",
@@ -14,7 +14,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -24,7 +24,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -34,7 +34,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -44,7 +44,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -54,7 +54,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -64,7 +64,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -74,7 +74,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -84,7 +84,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -94,7 +94,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -104,7 +104,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -114,7 +114,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -124,7 +124,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -134,7 +134,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -144,7 +144,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -156,7 +156,7 @@
 	],
 	"ProdukRekomendasi": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -166,7 +166,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -176,7 +176,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -186,7 +186,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -196,7 +196,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -208,7 +208,7 @@
 	],
 	"NewNormal": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -218,7 +218,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -228,7 +228,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -240,7 +240,7 @@
 	],
 	"ConsummerGoods": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -250,7 +250,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -260,7 +260,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -270,7 +270,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -282,7 +282,7 @@
 	],
 	"LifeStyle": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -292,7 +292,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -302,7 +302,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -314,7 +314,7 @@
 	],
 	"GadgetAndAksesoris": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -324,7 +324,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -334,7 +334,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -346,7 +346,7 @@
 	],
 	"Otomotif": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -356,7 +356,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -366,7 +366,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -378,7 +378,7 @@
 	],
 	"VoucherAndTravel": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -388,7 +388,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -398,7 +398,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -408,7 +408,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -420,7 +420,7 @@
 	],
 	"HomeAndLiving": [
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -430,7 +430,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
@@ -440,7 +440,7 @@
 			"isStock": "true"
 		},
 		{
-			"_id": "asd1293uasdads1",
+			"id": "asd1293uasdads1",
 			"name": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
