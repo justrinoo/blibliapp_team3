@@ -7,8 +7,8 @@
 ### Cara integrasi ke team:
 
 1. ketika sudah clone bikin sesuai tugas masing masing
-2. ketika mau di upload ke git di push dulu tugas kalian
-4. terus git pull https://github.com/yaelahno/blibliapp_team3.git
+2. ketika sudah clone git pull https://github.com/yaelahno/blibliapp_team3.git
+4. terus git add,commit,push 
 
 ### Cara mengerjakan Project
 
