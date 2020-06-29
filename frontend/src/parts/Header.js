@@ -44,14 +44,14 @@ export default function Header() {
 				</div>
 			</nav>
 
-			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<nav class="navbar navbar-expand-lg navbar-light bg-blue">
 				<img src={Logo} alt="logo" width={114} />
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<p type="button" class="bg-primary ml-5 mt-4 text-white" data-toggle="modal" data-target="#exampleModal">
+					<p type="button" class="bg-blue ml-5 mt-4 text-white" data-toggle="modal" data-target="#exampleModal">
 						<img src={Kategori} alt="" />
 						<span className="ml-2">Kategori</span>
 					</p>
@@ -75,13 +75,20 @@ export default function Header() {
 						</div>
 					</div>
 
-					<div class="input-group md-form form-sm form-1 pl-0">
-						<div class="input-group-prepend">
-							<span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
-								aria-hidden="true"></i></span>
-						</div>
-							<input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search" />
+					{/* <div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<button class="btn bg-white" type="button"><img src={Search} alt=""/></button>
 					</div>
+						<input type="text" class="form-control" placeholder="Kamu mau beli apa?" aria-label="" aria-describedby="basic-addon1"/>
+					</div> */}
+
+<div class="input-group md-form form-sm form-1 pl-0 w-50 ml-5">
+  <div class="input-group-prepend">
+    <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+        aria-hidden="true"></i></span>
+  </div>
+  <input class="form-control my-0 py-1 " type="text" placeholder="Search" aria-label="Search"/>
+</div>
 
 						<span>
 							<img src="" alt="" />
@@ -89,7 +96,7 @@ export default function Header() {
 
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<a href="#" className="btn btn-primary text-white mr-3">Masuk</a>
+								<a href="#" className="btn btn-blue text-white mr-3">Masuk</a>
 							</li>
 							<li className="nav-item">
 								<a href="#" className="btn btn-primary bg-white text-primary">Daftar</a>
