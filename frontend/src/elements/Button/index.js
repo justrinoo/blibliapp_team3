@@ -68,7 +68,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-	type: propTypes.oneOfType(["link", "button"]),
+	type: propTypes.oneOfType(["button", "link"]),
 	href: propTypes.string,
 	onClick: propTypes.func,
 	isPrimary: propTypes.bool,

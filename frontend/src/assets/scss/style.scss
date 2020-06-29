@@ -46,20 +46,127 @@
 @import "print";
 
 header {
-	.navbar {
-		background-color: #007eb8;
-	}
-	.navbar-menu {
-		background-color: #0095da;
-	}
+    .navbar {
+        background-color: #007eb8;
+    }
+
+    .navbar-menu {
+        background-color: #0095da;
+    }
 }
+
 .navbar-text {
-	font-size: 12px;
-	display: flex;
-	color: $white;
-	font-weight: 600;
-	cursor: pointer;
-	.navbar-nav {
-		cursor: pointer;
-	}
+    font-size: 12px;
+    display: flex;
+    color: $white;
+    font-weight: 600;
+    cursor: pointer;
+
+    .navbar-nav {
+        cursor: pointer;
+    }
+}
+
+.jumbotron {
+    background-image: url("../images/bg-flashsale.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-discover {
+    background: url("../images/bg-flashsale.jpg") center no-repeat 100%,
+        linear-gradient(122deg, #74d3ff 13%, #0095da 61%);
+    border-radius: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title_discover {
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card-title {
+    max-width: 100%;
+    display: table;
+
+    img {
+        width: 45px;
+    }
+
+    .title_card_discover {
+        margin: 10px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
+
+.item-timer {
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.flash_title {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-flashsale {
+    text-decoration: none;
+    font-weight: 500;
+    color: $white;
+    float: right;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.text-disabled {
+    font-size: 12px;
+}
+
+.card-item-title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-deck {
+    cursor: pointer;
+}
+
+.img-wrapper {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+        .img-wrapper {
+            transform: scale(1);
+        }
+    }
 }
