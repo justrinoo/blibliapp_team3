@@ -4,7 +4,6 @@ const conn = mysql.createConnection({
 	host: "localhost",
 	user: "root",
 	password: "",
-	database: "",
+	database: "blibliwebapps",
 });
-
-export default conn;
+module.exports = conn;

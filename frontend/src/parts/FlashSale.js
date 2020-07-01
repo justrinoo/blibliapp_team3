@@ -4,6 +4,13 @@ import Timer from "react-compound-timer";
 import { Link } from "react-router-dom";
 
 export default function FlashSale({ data }) {
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	};
 	return (
 		<section className="jumbotron img-fluid">
 			<div className="container ">
@@ -41,7 +48,7 @@ export default function FlashSale({ data }) {
 					</span>
 				</Timer>
 				<span className="text-flashsale">
-					<Link to="/flashsaleAll" className="text-flashsale">
+					<Link to="/  " className="text-flashsale">
 						Lihat Semua
 					</Link>
 				</span>
@@ -52,7 +59,7 @@ export default function FlashSale({ data }) {
 						return (
 							<div key={index} className="col-md">
 								<div className="card-deck mt-4 " style={{ width: "100%" }}>
-									<div className="card ">
+									<div className="card" style={{ borderRadius: "20px" }}>
 										<img
 											src={ItemFlashSale.imageUrls}
 											className="img-fluid"
@@ -73,9 +80,9 @@ export default function FlashSale({ data }) {
 													{ItemFlashSale.discount}
 												</span>
 											</p>
-											<div class="progress">
+											<div className="progress">
 												<div
-													class="progress-bar w-50 bg-success"
+													className="progress-bar w-50 bg-success"
 													role="progressbar"
 													aria-valuenow="75"
 													aria-valuemin="0"

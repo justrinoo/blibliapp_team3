@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LandingPages from "./pages/LandingPages";
 import "./assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { LandingApiPage } from "./api/LandingPageApi";
 
 export default class App extends Component {
 	render() {
@@ -9,6 +10,7 @@ export default class App extends Component {
 			<>
 				<Router>
 					<Route exact component={LandingPages} path="/" />
+					<Route exact component={LandingApiPage} path="/api" />
 				</Router>
 			</>
 		);
