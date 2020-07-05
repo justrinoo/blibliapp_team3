@@ -2,11 +2,12 @@ var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
+var session = require("express-session");
 var logger = require("morgan");
-var cors = require("cors");
-var landingRouter = require("./routes/landingpage-routes");
-var itemdetailsRouter = require("./routes/itemdetails-routes");
-// var usersRouter = require("./routes/users");
+
+var indexRouter = require("./routes/index");
+var usersRouter = require("./routes/users");
+var itemRouter = require("./routes/itemdetails-routes");
 
 var app = express();
 
@@ -18,12 +19,40 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
-app.use(cors());
-app.use("/", landingRouter);
-app.use("/", itemdetailsRouter);
-// app.use("/itemdetails", usersRouter);
+app.use(
+	session({
+		secret: "theenkeng about meems",
+		resave: true,
+		saveUninitialized: true,
+		cookie: {
+			maxAge: 600000,
+		},
+	})
+);
 
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
+
+const User = require("./model/users");
+
+const auth = function (req, res, next) {
+	console.log("req auth", req.session.email);
+	const { email, password } = req.session;
+	console.log("res auth", req);
+	User.getData({ email, password }, (err, res) => {
+		console.log("auth res", res);
+
+		if (password === res.password) {
+			return next();
+		}
+		return res.redirect("/");
+	});
+};
+
+app.use("/", indexRouter);
+app.use("/", itemRouter);
+app.use("/users", usersRouter);
+// app.use("/posts", auth, postsRouter);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	next(createError(404));

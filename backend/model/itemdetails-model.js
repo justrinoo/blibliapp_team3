@@ -21,7 +21,7 @@ module.exports = {
 						namaproduk: postItem.namaproduk,
 						gambar: postItem.gambar,
 						diskon: postItem.diskon,
-						potonganharga: postItem.poton - ganharga,
+						potonganharga: postItem.potonganharga,
 						rewards: postItem.rewards,
 						harga: postItem.harga,
 						metodepengiriman: postItem.metodepengiriman,

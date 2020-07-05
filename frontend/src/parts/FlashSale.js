@@ -12,7 +12,7 @@ export default function FlashSale({ data }) {
 		slidesToScroll: 1,
 	};
 	return (
-		<section className="jumbotron img-fluid">
+		<section className="jumbotron img-fluid mt-4">
 			<div className="container ">
 				<img
 					src={FlashSaleIcon}
@@ -80,11 +80,11 @@ export default function FlashSale({ data }) {
 													{ItemFlashSale.discount}
 												</span>
 											</p>
-											<div className="progress">
+											<div className="progress" style={{ height: "5px" }}>
 												<div
-													className="progress-bar w-50 bg-success"
+													className="progress-bar w-75  bg-success"
 													role="progressbar"
-													aria-valuenow="75"
+													aria-valuenow="20"
 													aria-valuemin="0"
 													aria-valuemax="100"
 												></div>

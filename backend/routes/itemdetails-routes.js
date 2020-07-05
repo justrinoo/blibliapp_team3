@@ -8,7 +8,7 @@ app.get("/v1/api/blibli/detailproduct/:id", (req, res) => {
 		console.log(result);
 		if (err) throw console.log("error When Find One Data...", err);
 		// res.send(result);
-		res.render("itemdetails", { itemDetails: result });
+		res.render("itemdetails", { title: "express" });
 	});
 });
 

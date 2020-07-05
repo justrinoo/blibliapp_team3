@@ -9,6 +9,7 @@
     "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-compound-timer": "^1.2.0",
     "react-dom": "^16.13.1",
     "react-items-carousel": "^2.8.0",
     "react-router-dom": "^5.2.0",

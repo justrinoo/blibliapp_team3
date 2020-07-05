@@ -4,9 +4,14 @@
 import React from "react";
 import Logo from "../assets/images/blibli-logo.svg";
 import Button from "../elements/Button";
-// import Search from "../assets/images/search.svg";
-// import Kategori from "../assets/images/kategori.svg";
-// import Bag from "../assets/images/bag.svg";
+import PesonaLogo from "../assets/images/logo-pesona.svg";
+import LogoCart from "../assets/images/shopping-cart.svg";
+import TabletLogo from "../assets/images/tablet-logo.svg";
+import Computer from "../assets/images/computer-logo.svg";
+import Camera from "../assets/images/camera.svg";
+import LogoShop from "../assets/images/empty-shopping-bag.png";
+import Kategori from "../assets/images/kategori.svg";
+import Bag from "../assets/images/bag.svg";
 // import Button from "../elements/Button";
 
 export default function Header() {
@@ -49,35 +54,87 @@ export default function Header() {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 
-					<div className="collapse navbar-collapse" id="blibliNav">
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<p
+							class="ml-5 mt-4 text-white"
+							data-toggle="modal"
+							data-target="#exampleModal"
+						>
+							<img src={Kategori} className="img-fluid" alt="Kategori" />
+							<span className="ml-2">Kategori</span>
+						</p>
+
 						<div
-							className="modal fade"
+							class="modal fade"
 							id="exampleModal"
-							tabIndex="-1"
+							tabindex="-1"
 							role="dialog"
 							aria-labelledby="exampleModalLabel"
 							aria-hidden="true"
 						>
-							<div className="modal-dialog">
-								<div className="modal-content">
-									<div className="modal-header">
-										<h5 className="modal-title" id="exampleModalLabel">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
 											Kategori
 										</h5>
 										<button
 											type="button"
-											className="close"
+											class="close"
 											data-dismiss="modal"
 											aria-label="Close"
 										>
 											<span aria-hidden="true">&times;</span>
 										</button>
 									</div>
-									<div className="modal-body">...</div>
-									<div className="modal-footer">
+									<div class="modal-body">
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item">
+												<img
+													src={PesonaLogo}
+													alt="Logo"
+													style={{ height: "30px", marginRight: "15px" }}
+												/>
+												Galeri Indonesia
+											</li>
+											<li class="list-group-item">
+												<img
+													src={LogoCart}
+													alt="logo"
+													style={{ height: "30px", marginRight: "15px" }}
+												/>
+												BlibliMart
+											</li>
+											<li class="list-group-item">
+												<img
+													src={TabletLogo}
+													alt="logo"
+													style={{ height: "30px", marginRight: "15px" }}
+												/>
+												Handphone dan Tablet
+											</li>
+											<li class="list-group-item">
+												<img
+													src={Computer}
+													alt="logo"
+													style={{ height: "30px", marginRight: "15px" }}
+												/>
+												Komputer & Laptop
+											</li>
+											<li class="list-group-item">
+												<img
+													src={Camera}
+													alt="logo"
+													style={{ height: "30px", marginRight: "15px" }}
+												/>
+												Kamera
+											</li>
+										</ul>
+									</div>
+									<div class="modal-footer">
 										<button
 											type="button"
-											className="btn btn-primary"
+											class="btn btn-secondary"
 											data-dismiss="modal"
 										>
 											Close
@@ -87,50 +144,92 @@ export default function Header() {
 							</div>
 						</div>
 
-						<div className="input-group md-form form-sm form-1 pl-0">
-							<div className="input-group-prepend">
+						<div class="input-group md-form form-sm form-1 pl-0 w-50 ml-5">
+							<div class="input-group-prepend">
 								<span
-									className="input-group-text purple lighten-3"
+									class="input-group-text purple lighten-3 ml-3"
+									style={{ borderRadius: "0px" }}
 									id="basic-text1"
 								>
-									<i
-										className="fas fa-search text-white"
-										aria-hidden="true"
-									></i>
+									<i class="fas fa-search text-white" aria-hidden="true"></i>
 								</span>
 							</div>
 							<input
-								className="form-control my-0 py-1"
+								class="form-control my-0 py-1"
+								style={{ borderRadius: "0px" }}
 								type="text"
-								placeholder="Search"
+								placeholder="Kamu lagi cari apa?"
 								aria-label="Search"
 							/>
 						</div>
 
-						<span>
-							<img src="" alt="" />
-						</span>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<p
+								class="ml-auto mt-4 text-white"
+								data-toggle="modal"
+								data-target="#bagModal"
+							>
+								<img src={Bag} alt="" />
+								<span className="ml-2">Bag</span>
+							</p>
 
-						<ul className="navbar-nav ml-auto">
-							<li className="nav-item">
-								<Button
-									type="link"
-									href="/login"
-									className="btn btn-primary border-white text-white mr-3"
-								>
-									Masuk
-								</Button>
-							</li>
-							<li className="nav-item">
-								<Button
-									type="link"
-									href="/daftar"
-									className="btn btn-primary bg-white text-primary"
-								>
-									Daftar
-								</Button>
-							</li>
-						</ul>
+							<div
+								class="modal fade"
+								id="bagModal"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="exampleModalLabel"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<img
+												src={LogoShop}
+												alt="Logo"
+												style={{ margin: "auto", display: "block" }}
+											/>
+											<h6
+												class="font-weight-bold"
+												style={{ textAlign: "center" }}
+											>
+												Lho, Kok Sepi?
+											</h6>
+											<p
+												class="text-muted text-center"
+												style={{ textAlign: "center" }}
+											>
+												Mau diisi apa ya Bag sebesar ini? Coba masukkan produk
+												yang sudah kebawa mimpi. Habis belanja bisa dapat poin
+												Blibli Rewards lagi!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<ul className="navbar-nav ml-auto">
+								<li className="nav-item">
+									<Button
+										Button
+										type="link"
+										href="/login"
+										className="btn border-white  text-white mr-3"
+									>
+										Masuk
+									</Button>
+								</li>
+								<li className="nav-item">
+									<Button
+										type="link"
+										href="/daftar"
+										className="btn btn-primary bg-white text-primary"
+									>
+										Daftar
+									</Button>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</nav>
