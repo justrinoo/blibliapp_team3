@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Card() {
     return (
-        <div class="container">
+        <div>
             
         </div>
     )
