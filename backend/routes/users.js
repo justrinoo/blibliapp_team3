@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Users = require("../model/users");
 const crypto = require("crypto");
-const secret = "rinoea";
+const secret = "rinoagain";
 
 router.post("/v1/api/blibli/login", function (req, res) {
 	const { body } = req;
