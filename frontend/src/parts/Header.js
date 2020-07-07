@@ -213,7 +213,7 @@ export default function Header() {
 									<Button
 										Button
 										type="link"
-										href="/login"
+										href={`/login`}
 										className="btn border-white  text-white mr-3"
 									>
 										Masuk
@@ -222,7 +222,7 @@ export default function Header() {
 								<li className="nav-item">
 									<Button
 										type="link"
-										href="/daftar"
+										href={`/register`}
 										className="btn btn-primary bg-white text-primary"
 									>
 										Daftar

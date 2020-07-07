@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
-const ItemDetails = require("../model/itemdetails-model");
+const ItemDetails = require("../model/itemdetails");
 
 app.get("/v1/api/blibli/detailproduct/:id", (req, res) => {
 	const userId = req.params.id;
 	ItemDetails.findItemDetails(userId, (err, result) => {
 		console.log(result);
 		if (err) throw console.log("error When Find One Data...", err);
-		// res.send(result);
-		res.render("itemdetails", { title: "express" });
+		res.send(result);
+		// res.render("itemdetails", { title: "express" });
 	});
 });
 

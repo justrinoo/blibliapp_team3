@@ -1,10 +1,10 @@
-const db = require("../config/index");
+const conn = require("../config/index");
 const moment = require("moment");
 const crypto = require("crypto");
 module.exports = {
 	getData: async (body, callback) => {
 		const { email, password } = body;
-		db.query(
+		conn.query(
 			`SELECT * FROM users where email =  ? and password =  ?`,
 			[email, password],
 			(err, result) => {
@@ -21,7 +21,7 @@ module.exports = {
 		let updated_at = now;
 		let remember_token = crypto.randomBytes(32).toString("hex");
 		const { email, password } = body;
-		db.query(
+		conn.query(
 			`INSERT INTO users SET ?`,
 			{ email, password, remember_token, created_at, updated_at },
 			(err, result) => {

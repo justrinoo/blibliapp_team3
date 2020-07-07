@@ -1,31 +1,32 @@
 {
-  "name": "backend",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
-    "cookie-session": "^1.4.0",
-    "cors": "^2.8.5",
-    "crypto-js": "^4.0.0",
-    "debug": "~2.6.9",
-    "dotenv": "^8.2.0",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "express-flash": "0.0.2",
-    "express-session": "^1.17.1",
-    "fastify": "^2.15.1",
-    "fastify-formbody": "^3.2.0",
-    "fs": "0.0.1-security",
-    "http-errors": "~1.6.3",
-    "moment": "^2.27.0",
-    "morgan": "^1.9.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.4",
-    "req-flash": "0.0.3",
-    "sha1": "^1.1.1"
-  }
+	"name": "backend",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www",
+		"build": "netlify-lambda build express"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cookie-parser": "^1.4.5",
+		"cookie-session": "^1.4.0",
+		"cors": "^2.8.5",
+		"crypto-js": "^4.0.0",
+		"debug": "~2.6.9",
+		"dotenv": "^8.2.0",
+		"ejs": "~2.6.1",
+		"express": "~4.16.1",
+		"express-flash": "0.0.2",
+		"express-session": "^1.17.1",
+		"fastify": "^2.15.1",
+		"fastify-formbody": "^3.2.0",
+		"fs": "0.0.1-security",
+		"http-errors": "~1.6.3",
+		"moment": "^2.27.0",
+		"morgan": "^1.9.1",
+		"mysql": "^2.18.1",
+		"nodemon": "^2.0.4",
+		"req-flash": "0.0.3",
+		"sha1": "^1.1.1"
+	}
 }

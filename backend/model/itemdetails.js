@@ -1,10 +1,10 @@
-const db = require("../config/index");
+const conn = require("../config/index");
 
 module.exports = {
 	findItemDetails: async (id, callback) => {
-		db.query(
+		conn.query(
 			{
-				sql: "SELECT * FROM itemdetails WHERE id = ?",
+				sql: "SELECT * FROM product WHERE id = ?",
 				values: [id],
 			},
 			function (err, result) {
@@ -14,9 +14,9 @@ module.exports = {
 	},
 	ItemDetails: async (postItem, callback) => {
 		try {
-			db.query(
+			conn.query(
 				{
-					sql: "INSERT INTO itemdetails SET ?",
+					sql: "INSERT INTO product SET ?",
 					values: {
 						namaproduk: postItem.namaproduk,
 						gambar: postItem.gambar,

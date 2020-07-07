@@ -1,11 +1,11 @@
-const db = require("../config/index");
+const conn = require("../config/index");
 
 module.exports = {
 	AllDataLandingPage: async (body, callback) => {
 		const { searchKey } = body;
 		console.log(body);
 		try {
-			db.query(
+			conn.query(
 				{
 					sql: `SELECT * FROM landingpages WHERE nameproduct LIKE ? OR price LIKE ?`,
 					values: [`%${searchKey}%`, `%${searchKey}%`],
@@ -22,7 +22,7 @@ module.exports = {
 	},
 
 	FindOneData: async (id, callback) => {
-		db.query(
+		conn.query(
 			{
 				sql: "SELECT * FROM landingpages WHERE id = ?",
 				values: [id],
