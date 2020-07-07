@@ -2,7 +2,7 @@
 	"FlashSale": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Sendal",
 			"imageUrls": "/images/.jpg",
 			"discount": "75% OFF",
@@ -12,7 +12,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -22,7 +22,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -32,7 +32,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -42,7 +42,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -52,7 +52,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -62,7 +62,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -72,7 +72,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -82,7 +82,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -92,7 +92,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -102,7 +102,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -112,7 +112,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -122,7 +122,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -132,7 +132,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -142,7 +142,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -154,7 +154,7 @@
 	"ProdukRekomendasi": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -164,7 +164,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -174,7 +174,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -184,7 +184,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -194,7 +194,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -206,7 +206,7 @@
 	"NewNormal": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -216,7 +216,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -226,7 +226,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -238,7 +238,7 @@
 	"ConsummerGoods": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -248,7 +248,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -258,7 +258,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -268,7 +268,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -280,7 +280,7 @@
 	"LifeStyle": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -290,7 +290,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -300,7 +300,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -312,7 +312,7 @@
 	"GadgetAndAksesoris": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -322,7 +322,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -332,7 +332,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -344,7 +344,7 @@
 	"Otomotif": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -354,7 +354,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -364,7 +364,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -376,7 +376,7 @@
 	"VoucherAndTravel": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -386,7 +386,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -396,7 +396,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -406,7 +406,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -418,7 +418,7 @@
 	"HomeAndLiving": [
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -428,7 +428,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -438,7 +438,7 @@
 		},
 		{
 			"_id": "asd1293uasdads1",
-			"name": "Sendal Jepit",
+			"nameproduct": "Sendal Jepit",
 			"type": "Tas",
 			"imageUrls": "/images/.jpg",
 			"discount": "60% OFF",
@@ -448,7 +448,7 @@
 		}
 	],
 	"Star": {
-		"name": "Whistlist",
+		"nameproduct": "Whistlist",
 		"rate": 3.9
 	}
 }
