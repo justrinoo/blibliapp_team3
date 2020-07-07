@@ -4,10 +4,12 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var session = require("express-session");
 var logger = require("morgan");
-
+var cors = require("cors");
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
-var itemRouter = require("./routes/itemdetails-routes");
+var usersRouter = require("./routes/user");
+var itemRouter = require("./routes/itemdetails");
+var landingRouter = require("./routes/landingpage");
+var cartRouter = require("./routes/cart");
 
 var app = express();
 
@@ -17,11 +19,12 @@ app.set("view engine", "ejs");
 
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(cors());
 app.use(
 	session({
-		secret: "theenkeng about meems",
+		secret: "keyboard cat",
 		resave: true,
 		saveUninitialized: true,
 		cookie: {
@@ -50,6 +53,8 @@ const auth = function (req, res, next) {
 };
 
 app.use("/", indexRouter);
+app.use("/", cartRouter);
+app.use("/", landingRouter);
 app.use("/", itemRouter);
 app.use("/users", usersRouter);
 // app.use("/posts", auth, postsRouter);

@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-let LandingPage = require("../model/landingpage-model");
+let LandingPage = require("../model/landingpage");
 /* GET home page. */
 
 app.get("/v1/api/blibli", function (req, res, next) {

@@ -1,6 +1,8 @@
 var express = require("express");
 var router = express.Router();
 var Users = require("../model/users");
+let crypto = require("crypto");
+let secret = "rinoea";
 /* GET users listing. */
 
 router.post("/v1/api/blibli/login", function (req, res) {
@@ -30,7 +32,7 @@ router.post("/v1/api/blibli/register", function (req, res) {
 
 	Users.create({ ...body, password: hash }, (err, result) => {
 		if (err) throw err;
-		res.redirect("/");
+		res.redirect("/v1/api/blibli");
 	});
 });
 
