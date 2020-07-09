@@ -2,10 +2,17 @@ import React from "react";
 import FlashSaleIcon from "../assets/images/icons/flashsale-ic.svg";
 import Timer from "react-compound-timer";
 import { Link } from "react-router-dom";
-
+import Button from "../elements/Button";
 export default function FlashSale({ data }) {
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	};
 	return (
-		<section className="jumbotron img-fluid">
+		<section className="jumbotron img-fluid mt-4">
 			<div className="container ">
 				<img
 					src={FlashSaleIcon}
@@ -41,7 +48,7 @@ export default function FlashSale({ data }) {
 					</span>
 				</Timer>
 				<span className="text-flashsale">
-					<Link to="/flashsaleAll" className="text-flashsale">
+					<Link to="/  " className="text-flashsale">
 						Lihat Semua
 					</Link>
 				</span>
@@ -51,40 +58,47 @@ export default function FlashSale({ data }) {
 					{data.map((ItemFlashSale, index) => {
 						return (
 							<div key={index} className="col-md">
-								<div className="card-deck mt-4 " style={{ width: "100%" }}>
-									<div className="card ">
-										<img
-											src={ItemFlashSale.imageUrls}
-											className="img-fluid"
-											alt="FlashSaleImage"
-										/>
-										<div className="card-body ">
-											<div className="card-item-title">
-												<span className="card-title ">
-													{ItemFlashSale.name}
-												</span>
-											</div>
-											<p className="card-text text-orange font-weight-bold ">
-												{ItemFlashSale.price}
-											</p>
-											<p className="card-text text-disabled text-gray">
-												<del>{ItemFlashSale.sale}</del>{" "}
-												<span className="text-danger">
-													{ItemFlashSale.discount}
-												</span>
-											</p>
-											<div class="progress">
-												<div
-													class="progress-bar w-50 bg-success"
-													role="progressbar"
-													aria-valuenow="75"
-													aria-valuemin="0"
-													aria-valuemax="100"
-												></div>
+								<Button
+									type="link"
+									href={`/itemdetail/${ItemFlashSale.id}`}
+									className="text-decoration-none text-dark"
+								>
+									<div className="card-deck mt-4 " style={{ width: "100%" }}>
+										<div className="card" style={{ borderRadius: "20px" }}>
+											<img
+												src={ItemFlashSale.imageUrls}
+												className="img-fluid"
+												alt="FlashSaleImage"
+											/>
+											<div className="card-body ">
+												<div className="card-item-title">
+													<span className="card-title ">
+														{ItemFlashSale.name}
+													</span>
+												</div>
+												<p className="card-text text-orange font-weight-bold ">
+													{ItemFlashSale.price}
+												</p>
+												<p className="card-text text-disabled text-gray">
+													<del>{ItemFlashSale.sale}</del>{" "}
+													<span className="text-danger">
+														{ItemFlashSale.discount}
+													</span>
+												</p>
+
+												<div className="progress" style={{ height: "5px" }}>
+													<div
+														className="progress-bar w-75  bg-success"
+														role="progressbar"
+														aria-valuenow="20"
+														aria-valuemin="0"
+														aria-valuemax="100"
+													></div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
+								</Button>
 							</div>
 						);
 					})}

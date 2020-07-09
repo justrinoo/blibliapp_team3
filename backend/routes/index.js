@@ -1,16 +1,17 @@
-var express = require("express");
-var router = express.Router();
-let product = require("../data/index");
-/* GET home page. */
+const express = require("express");
+const app = express();
 
-router.get("/", function (req, res) {
-	res.render("index", { title: "express" });
-});
+// app.get("/v1/api/blibli", (req, res) => {
+// 	res.render("index", { title: "blibli" });
+// });
 
-router.get("/blibli/:id", (req, res) => {
-	let getId = req.params.id;
-	let products = product.find((item) => item.id === getId);
-	res.json(products);
-});
+// app.get("/v1/api/blibli/login", (req, res) => {
+// 	res.render("sign/login", { title: "express" });
+// });
 
-module.exports = router;
+// app.get("/v1/api/blibli/register", (req, res) => {
+// 	// res.send("welcome");
+// 	res.render("sign/register", { title: "express" });
+// });
+
+module.exports = app;

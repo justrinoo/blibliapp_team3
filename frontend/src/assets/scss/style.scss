@@ -170,3 +170,23 @@ header {
         }
     }
 }
+
+.navbar_category {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 24px -4px rgba(0, 0, 0, .12);
+    font-size: 14px;
+}
+
+.nav-item {
+    background-color: linear-gradient(106deg, #f8a33f, #f37021);
+
+}
+
+.card-category {
+    background-color: $white;
+}
+
+.card_masukblibli {
+    margin: auto;
+}
