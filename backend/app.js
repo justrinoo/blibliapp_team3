@@ -9,7 +9,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/user");
 var itemRouter = require("./routes/itemdetails");
 var landingRouter = require("./routes/landingpage");
-var cartRouter = require("./routes/cart");
+var sellerProductRouter = require("./routes/sellerproducts");
 
 var app = express();
 
@@ -53,7 +53,7 @@ const auth = function (req, res, next) {
 };
 
 app.use("/", indexRouter);
-app.use("/", cartRouter);
+app.use("/sellers", sellerProductRouter);
 app.use("/", landingRouter);
 app.use("/", itemRouter);
 app.use("/users", usersRouter);
