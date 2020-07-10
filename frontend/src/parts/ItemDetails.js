@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import Header from '../parts/Header';
 import Timer from "react-compound-timer";
@@ -271,4 +272,16 @@ export default function ItemDetails() {
         </div>
         </div>
     )
+=======
+import React from "react";
+
+export default function ItemDetails({ data, props }) {
+	return (
+		<div>
+			<div className="container mt-5">
+				<h4>Item Details</h4>
+			</div>
+		</div>
+	);
+>>>>>>> 98b45861cdccb9cbbd8fd34972e8c880bcaf75e7
 }

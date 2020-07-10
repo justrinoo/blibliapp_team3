@@ -9,7 +9,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/user");
 var itemRouter = require("./routes/itemdetails");
 var landingRouter = require("./routes/landingpage");
-var cartRouter = require("./routes/cart");
+var sellerProductRouter = require("./routes/sellerproducts");
 
 var app = express();
 
@@ -53,11 +53,16 @@ const auth = function (req, res, next) {
 };
 
 app.use("/", indexRouter);
-app.use("/", cartRouter);
+app.use("/sellers", sellerProductRouter);
 app.use("/", landingRouter);
 app.use("/", itemRouter);
 app.use("/users", usersRouter);
 // app.use("/posts", auth, postsRouter);
+app.use((req, res, next) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	next();
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	next(createError(404));

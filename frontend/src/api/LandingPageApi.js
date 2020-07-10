@@ -8,7 +8,7 @@ export const LandingApiPage = (props) => {
 	useEffect(() => {
 		Axios.get(`${API_URL}`).then((res) => {
 			console.log("request data...");
-			console.log(res.data);
+			setDataLanding(res.data);
 		});
 	}, []);
 

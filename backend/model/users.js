@@ -20,10 +20,10 @@ module.exports = {
 		let created_at = now;
 		let updated_at = now;
 		let remember_token = crypto.randomBytes(32).toString("hex");
-		const { email, password } = body;
+		const { fullname, email, password } = body;
 		conn.query(
 			`INSERT INTO users SET ?`,
-			{ email, password, remember_token, created_at, updated_at },
+			{ fullname, email, password, remember_token, created_at, updated_at },
 			(err, result) => {
 				if (err) throw console.log("error when query model users", err);
 				return callback(err, result);
