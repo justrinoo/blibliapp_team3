@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import propTypes from "prop-types";
-import "./index.scss";
+import propTypes from "prop-types"
 import IcMail from "../../../assets/images/icons/mail.svg";
 import IcPassword from "../../../assets/images/icons/password.svg";
 export default function Text(props) {
