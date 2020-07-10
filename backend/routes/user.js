@@ -17,8 +17,8 @@ router.post("/v1/api/blibli/login", function (req, res) {
 		if (err) throw err;
 		req.session.email = result.email;
 		req.session.password = result.password;
-		// return res.send({ err, result, fields });
-		req.session.save(() => res.redirect("/v1/api/blibli"));
+		return res.send({ err, result, fields });
+		// req.session.save(() => res.redirect("/v1/api/blibli"));
 	});
 });
 
@@ -32,7 +32,7 @@ router.post("/v1/api/blibli/register", function (req, res) {
 
 	Users.create({ ...body, password: hash }, (err, result) => {
 		if (err) throw err;
-		res.redirect("/v1/api/blibli");
+		res.redirect("/v1/api/blibli/login");
 	});
 });
 

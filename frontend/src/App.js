@@ -1,29 +1,33 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import "./assets/scss/style.scss";
+
 import LandingPages from "./pages/LandingPages";
+import Cart from "./parts/Cart";
+import Login from "./parts/Sign/Login";
 import ItemDetails from "./parts/ItemDetails";
+
 import "./assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { LandingApiPage } from "./api/LandingPageApi";
-import Cart from "./parts/Cart";
+// import { LandingApiPage } from "./api/LandingPageApi";
 
-import Login from "./pages/Sign/Login";
-import "./assets/scss/style.scss";
-import Example from "./elements/Form/InputText/index";
-export default class App extends Component {
-	render() {
-		return (
-			<>
-				<Router>
-					<Route exact component={LandingPages} path="/" />
-					<Route exact component={LandingApiPage} path="/api" />
-					<Route exact component={Cart} path="/cart" />
-					<Route component={Login} path="/login" />
-					<Route component={Example} path="/example" />
-				</Router>
-				<Router>
-					<Router component={ItemDetails} path="itemDetails" />
-				</Router>
-			</>
-		);
-	}
+import axios from "axios";
+
+// import Example from "./elements/Form/InputText/index";
+import PrivateRoute from "./utils/PrivateRoute";
+import PublicRoute from "./utils/PublicRoutes";
+import Daftar from "./parts/Sign/Daftar";
+
+export default function App(props) {
+	return (
+		<>
+			<Router>
+				<Route exact path="/" component={LandingPages} />
+				<PublicRoute path="/login" component={Login} />
+				<PublicRoute path="/register" component={Daftar} />
+				<PrivateRoute path="/dashboard" component={LandingPages} />
+
+				<Route component={ItemDetails} path="/itemDetails" />
+			</Router>
+		</>
+	);
 }

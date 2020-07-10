@@ -58,6 +58,11 @@ app.use("/", landingRouter);
 app.use("/", itemRouter);
 app.use("/users", usersRouter);
 // app.use("/posts", auth, postsRouter);
+app.use((req, res, next) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	next();
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	next(createError(404));

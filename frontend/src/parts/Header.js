@@ -11,10 +11,20 @@ import Computer from "../assets/images/computer-logo.svg";
 import Camera from "../assets/images/camera.svg";
 import LogoShop from "../assets/images/empty-shopping-bag.png";
 import Kategori from "../assets/images/kategori.svg";
+import { useHistory } from "react-router-dom";
 import Bag from "../assets/images/bag.svg";
+
+import { getUser, removeUserSession } from "../utils/Common";
 // import Button from "../elements/Button";
 
 export default function Header() {
+	const user = getUser();
+
+	let history = useHistory();
+	const handleLogout = () => {
+		removeUserSession();
+		history.push("/");
+	};
 	return (
 		<header className="spicing-sm">
 			<nav
@@ -54,9 +64,9 @@ export default function Header() {
 						<span className="navbar-toggler-icon"></span>
 					</button>
 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<p
-							class="ml-5 mt-4 text-white"
+							className="ml-5 mt-4 text-white"
 							data-toggle="modal"
 							data-target="#exampleModal"
 						>
@@ -65,31 +75,31 @@ export default function Header() {
 						</p>
 
 						<div
-							class="modal fade"
+							className="modal fade"
 							id="exampleModal"
-							tabindex="-1"
+							tabIndex="-1"
 							role="dialog"
 							aria-labelledby="exampleModalLabel"
 							aria-hidden="true"
 						>
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLabel">
+							<div className="modal-dialog">
+								<div className="modal-content">
+									<div className="modal-header">
+										<h5 className="modal-title" id="exampleModalLabel">
 											Kategori
 										</h5>
 										<button
 											type="button"
-											class="close"
+											className="close"
 											data-dismiss="modal"
 											aria-label="Close"
 										>
 											<span aria-hidden="true">&times;</span>
 										</button>
 									</div>
-									<div class="modal-body">
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item">
+									<div className="modal-body">
+										<ul className="list-group list-group-flush">
+											<li className="list-group-item">
 												<img
 													src={PesonaLogo}
 													alt="Logo"
@@ -97,7 +107,7 @@ export default function Header() {
 												/>
 												Galeri Indonesia
 											</li>
-											<li class="list-group-item">
+											<li className="list-group-item">
 												<img
 													src={LogoCart}
 													alt="logo"
@@ -105,7 +115,7 @@ export default function Header() {
 												/>
 												BlibliMart
 											</li>
-											<li class="list-group-item">
+											<li className="list-group-item">
 												<img
 													src={TabletLogo}
 													alt="logo"
@@ -113,7 +123,7 @@ export default function Header() {
 												/>
 												Handphone dan Tablet
 											</li>
-											<li class="list-group-item">
+											<li className="list-group-item">
 												<img
 													src={Computer}
 													alt="logo"
@@ -121,7 +131,7 @@ export default function Header() {
 												/>
 												Komputer & Laptop
 											</li>
-											<li class="list-group-item">
+											<li className="list-group-item">
 												<img
 													src={Camera}
 													alt="logo"
@@ -131,10 +141,10 @@ export default function Header() {
 											</li>
 										</ul>
 									</div>
-									<div class="modal-footer">
+									<div className="modal-footer">
 										<button
 											type="button"
-											class="btn btn-secondary"
+											className="btn btn-secondary"
 											data-dismiss="modal"
 										>
 											Close
@@ -144,18 +154,21 @@ export default function Header() {
 							</div>
 						</div>
 
-						<div class="input-group md-form form-sm form-1 pl-0 w-50 ml-5">
-							<div class="input-group-prepend">
+						<div className="input-group md-form form-sm form-1 pl-0 w-50 ml-5">
+							<div className="input-group-prepend">
 								<span
-									class="input-group-text purple lighten-3 ml-3"
+									className="input-group-text purple lighten-3 ml-3"
 									style={{ borderRadius: "0px" }}
 									id="basic-text1"
 								>
-									<i class="fas fa-search text-white" aria-hidden="true"></i>
+									<i
+										className="fas fa-search text-white"
+										aria-hidden="true"
+									></i>
 								</span>
 							</div>
 							<input
-								class="form-control my-0 py-1"
+								className="form-control my-0 py-1"
 								style={{ borderRadius: "0px" }}
 								type="text"
 								placeholder="Kamu lagi cari apa?"
@@ -163,40 +176,44 @@ export default function Header() {
 							/>
 						</div>
 
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div
+							className="collapse navbar-collapse"
+							id="navbarSupportedContent"
+						>
 							<p
-								class="ml-auto mt-4 text-white"
+								className="ml-auto mt-4 text-white"
 								data-toggle="modal"
 								data-target="#bagModal"
 							>
 								<img src={Bag} alt="" />
-								<span className="ml-2">Bag</span>
+								<span className="ml">Bag</span>
 							</p>
+							<small className="text-white">{user}</small>
 
 							<div
-								class="modal fade"
+								className="modal fade"
 								id="bagModal"
-								tabindex="-1"
+								tabIndex="-1"
 								role="dialog"
 								aria-labelledby="exampleModalLabel"
 								aria-hidden="true"
 							>
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-body">
+								<div className="modal-dialog">
+									<div className="modal-content">
+										<div className="modal-body">
 											<img
 												src={LogoShop}
 												alt="Logo"
 												style={{ margin: "auto", display: "block" }}
 											/>
 											<h6
-												class="font-weight-bold"
+												className="font-weight-bold"
 												style={{ textAlign: "center" }}
 											>
 												Lho, Kok Sepi?
 											</h6>
 											<p
-												class="text-muted text-center"
+												className="text-muted text-center"
 												style={{ textAlign: "center" }}
 											>
 												Mau diisi apa ya Bag sebesar ini? Coba masukkan produk

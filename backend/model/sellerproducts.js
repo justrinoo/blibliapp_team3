@@ -57,12 +57,12 @@ module.exports = {
 	UpdateProduct: async (id, body, callback) => {
 		conn.query(
 			{
-				sql: "UPDATE product SET ? WHERE id = ?",
+				sql: "UPDATE sellerproducts SET ? WHERE id = ?",
 				values: [{ ...body }, id],
 			},
 			(err, result) => {
 				if (err)
-					throw console.log("error when update products in sellers", err);
+					throw console.log("error when update sellerproducts in sellers", err);
 				callback(err, result);
 			}
 		);
@@ -70,7 +70,7 @@ module.exports = {
 	DeleteProduct: async (id, callback) => {
 		conn.query(
 			{
-				sql: "DElETE FROM product WHERE id = ?",
+				sql: "DElETE FROM sellerproducts WHERE id = ?",
 				values: [id],
 			},
 			(err, result) => {

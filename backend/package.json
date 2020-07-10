@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "node ./bin/www",
-		"build": "netlify-lambda build express"
+		"build": "npm run build"
 	},
 	"dependencies": {
 		"body-parser": "^1.19.0",
@@ -28,5 +28,8 @@
 		"nodemon": "^2.0.4",
 		"req-flash": "0.0.3",
 		"sha1": "^1.1.1"
+	},
+	"devDependencies": {
+		"netlify-lambda": "^1.6.3"
 	}
 }

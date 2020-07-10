@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../elements/Button";
 import iklan1 from "../assets/images/iklan-foter1.png";
 import iklan2 from "../assets/images/iklan2.png";
 import iklan3 from "../assets/images/iklan3.png";
@@ -360,7 +361,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan23} alt="" />
@@ -371,7 +371,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 							}}
@@ -384,7 +384,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -397,7 +397,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -410,7 +410,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-36px",
 							}}
@@ -423,7 +423,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-37px",
 							}}
@@ -436,7 +436,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-37px",
 							}}
@@ -449,7 +449,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "395px",
 								marginTop: "-37px",
 							}}
@@ -462,7 +462,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan30} alt="" />
@@ -473,7 +472,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 							}}
@@ -486,7 +485,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -499,7 +498,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -512,7 +511,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-36px",
 							}}
@@ -525,7 +524,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-36px",
 							}}
@@ -538,7 +537,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-36px",
 							}}
@@ -551,7 +550,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "60px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "395px",
 								marginTop: "-36px",
 							}}
@@ -564,7 +563,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan38} alt="" />
@@ -575,7 +573,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 							}}
@@ -588,7 +586,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 								height: "37px",
@@ -606,7 +604,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-36px",
 								height: "37px",
@@ -620,7 +618,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-36px",
 								height: "37px",
@@ -634,7 +632,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-36px",
 							}}
@@ -647,7 +645,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "395px",
 								marginTop: "-36px",
 								height: "37px",
@@ -671,7 +669,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan45} alt="" />
@@ -682,7 +679,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 							}}
@@ -695,7 +692,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -708,7 +705,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-37px",
 								height: "37px",
@@ -722,7 +719,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-37px",
 							}}
@@ -735,7 +732,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-37px",
 							}}
@@ -755,7 +752,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan51} alt="" />
@@ -766,7 +762,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 								height: "37px",
@@ -780,7 +776,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -793,7 +789,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-36px",
 								height: "37px",
@@ -811,7 +807,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-37px",
 								height: "37px",
@@ -825,7 +821,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-37px",
 								height: "37px",
@@ -839,7 +835,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "395px",
 								marginTop: "-37px",
 								height: "37px",
@@ -853,7 +849,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan58} alt="" />
@@ -864,7 +859,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "65px",
 								marginTop: "-36px",
 								height: "37px",
@@ -878,7 +873,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "61px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "130px",
 								marginTop: "-36px",
 							}}
@@ -891,7 +886,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "195px",
 								marginTop: "-36px",
 								height: "37px",
@@ -905,7 +900,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "260px",
 								marginTop: "-36px",
 								height: "37px",
@@ -919,7 +914,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "330px",
 								marginTop: "-36px",
 								height: "37px",
@@ -933,7 +928,7 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
+
 								marginLeft: "395px",
 								marginTop: "-36px",
 								height: "37px",
@@ -947,7 +942,6 @@ export default function Footer() {
 								border: "1px solid grey",
 								width: "62px",
 								borderRadius: "4px",
-								marginTop: "3px",
 							}}
 						>
 							<img src={iklan65} alt="" />
@@ -963,7 +957,6 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "62px",
 							borderRadius: "4px",
-							marginTop: "3px",
 						}}
 					>
 						<img src={iklan66} alt="" />
@@ -974,7 +967,7 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "61px",
 							borderRadius: "4px",
-							marginTop: "3px",
+
 							marginLeft: "65px",
 							marginTop: "-36px",
 							height: "37px",
@@ -988,7 +981,7 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "61px",
 							borderRadius: "4px",
-							marginTop: "3px",
+
 							marginLeft: "130px",
 							marginTop: "-36px",
 						}}
@@ -1001,7 +994,7 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "61px",
 							borderRadius: "4px",
-							marginTop: "3px",
+
 							marginLeft: "195px",
 							marginTop: "-36px",
 							height: "37px",
@@ -1015,7 +1008,7 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "61px",
 							borderRadius: "4px",
-							marginTop: "3px",
+
 							marginLeft: "260px",
 							marginTop: "-37px",
 							height: "37px",
@@ -1029,7 +1022,7 @@ export default function Footer() {
 							border: "1px solid grey",
 							width: "61px",
 							borderRadius: "4px",
-							marginTop: "3px",
+
 							marginLeft: "330px",
 							marginTop: "-37px",
 							height: "37px",
@@ -1079,33 +1072,33 @@ export default function Footer() {
 				<i> “Big Choices, Big Deals”</i>, Blibli siap memenuhi berbagai
 				kebutuhan sehari-hari Anda mulai dari kebutuhan
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						{" "}
 						Ibu dan Anak
-					</a>
+					</Button>
 				</b>{" "}
 				hingga <b>groceries</b>. Dengan berbelanja kebutuhan rumah tangga di
 				kategori
 				<b>
 					{" "}
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Bliblimart
-					</a>
+					</Button>
 				</b>
 				, Anda tak perlu lagi ke luar rumah, bermacet-macetan di jalan, terpapar
 				sinar matahari, dikejar waktu ketika di supermarket membeli sabun cuci
 				piring seperti{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Sparkle
-					</a>
+					</Button>
 				</b>
 				, mengantre di kasir hingga menjinjing beban berat dari belanjaan Anda,
 				bahkan Anda bisa belanja{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						sayur online
-					</a>
+					</Button>
 				</b>{" "}
 				di Blibli. Dengan berbelanja di{" "}
 				<b>
@@ -1113,9 +1106,9 @@ export default function Footer() {
 				</b>{" "}
 				Blibli, semua kebutuhan rumah tangga mulai dari bumbu dapur hingga{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Home Living
-					</a>
+					</Button>
 				</b>{" "}
 				bisa diantarkan langsung ke rumah Anda.
 			</p>
@@ -1132,16 +1125,16 @@ export default function Footer() {
 			>
 				TERBARU,{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Blibli Hasanah
-					</a>
+					</Button>
 				</b>{" "}
 				menghadirkan berbagai Produk halal / Muslim Friendly <br />
 				(Dapatkan{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Promo ramadhan
-					</a>
+					</Button>
 				</b>{" "}
 				terbaru 2020, untuk ramadhan yang lebih baik di tahun ini)
 			</p>
@@ -1158,15 +1151,15 @@ export default function Footer() {
 			>
 				(Temukan Produk dari{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Zyo Furniture
-					</a>
+					</Button>
 				</b>{" "}
 				dan{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Paqui One Chip di Blibli
-					</a>
+					</Button>
 				</b>
 				)
 			</p>
@@ -1183,9 +1176,9 @@ export default function Footer() {
 			>
 				(Dapatkan{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						promo sabun Sparkle
-					</a>
+					</Button>
 				</b>{" "}
 				sekarang dengan hadiah menarik)
 			</p>
@@ -1204,16 +1197,16 @@ export default function Footer() {
 				kebutuhan hobi jika Anda <b>belanja online di Blibli</b>. Anda gemar
 				fotografi? Jangan khawatir, Anda bisa mendapatkan berbagai{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						kamera
-					</a>
+					</Button>
 				</b>{" "}
 				beserta aksesorisnya dalam kategori Kamera. Anda gemar menyukai gadget?
 				Berbagai jenis produk smartphone bisa Anda dapatkan dalam kategori{" "}
 				<b>
-					<a href="#" style={{ color: "black", textDecoration: "none" }}>
+					<Button href="#" style={{ color: "black", textDecoration: "none" }}>
 						Handphone & Tablet
-					</a>
+					</Button>
 				</b>
 				. Untuk yang gemar melakukan aktivitas fisik seperti olahraga badminton,
 				basketballs, bela diri, futsal, golf, lari hingga olahraga air dan
@@ -1662,7 +1655,7 @@ export default function Footer() {
 			>
 				Daftar{" "}
 				<b>
-					<a href="#">Harga Mobil BMW</a>
+					<Button href="#">Harga Mobil BMW</Button>
 				</b>
 			</p>
 
@@ -1678,7 +1671,7 @@ export default function Footer() {
 			>
 				Daftar{" "}
 				<b>
-					<a href="#">Harga Mobil BMW</a>
+					<Button href="#">Harga Mobil BMW</Button>
 				</b>
 			</p>
 		</>
