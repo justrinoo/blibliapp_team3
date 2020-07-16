@@ -1,32 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./assets/scss/style.scss";
-
-import LandingPages from "./pages/LandingPages";
-<<<<<<< HEAD
 // import "./assets/scss/style.scss";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { LandingApiPage } from "./api/LandingPageApi";
-import Login from "./pages/Sign/Login";
-import Example from "./elements/Form/InputText/index";
-import ItemDetails from "./parts/ItemDetails";
-export default class App extends Component {
-	render() {
-		return (
-			<>
-				<Router>
-					<Route exact component={LandingPages} path="/" />
-					<Route component={Login} path="/login" />
-					<Route component={ItemDetails} path={`/itemdetails`} />
-				</Router>
-			</>
-		);
-	}
-=======
+import LandingPages from "./pages/LandingPages";
 import Cart from "./parts/Cart";
 import Login from "./parts/Sign/Login";
 import ItemDetails from "./parts/ItemDetails";
 
-import "./assets/scss/style.scss";
+// import "./assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import { LandingApiPage } from "./api/LandingPageApi";
 
@@ -50,5 +29,5 @@ export default function App(props) {
 			</Router>
 		</>
 	);
->>>>>>> 98b45861cdccb9cbbd8fd34972e8c880bcaf75e7
+
 }

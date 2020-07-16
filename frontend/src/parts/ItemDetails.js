@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react'
 import Header from '../parts/Header';
 import Timer from "react-compound-timer";
@@ -8,8 +7,12 @@ import Printer from '../assets/images/printer1.jpg';
 import Heart from '../assets/images/heart.png';
 import Facebook from '../assets/images/facebook.png';
 import Twitter from '../assets/images/twitter.png';
+import IconLokasi from '../assets/images/location.png';
+import IconPengiriman from '../assets/images/truck.png';
 import Email from '../assets/images/email.png';
 import Discount from '../assets/images/price.png';
+import L3150 from '../assets/images/l3150.jpg';
+import Epson from '../assets/images/epsonwifi.jpg';
 
 
 export default function ItemDetails() {
@@ -183,19 +186,6 @@ export default function ItemDetails() {
   </div>
 
 <hr/>
-  {/* <div class="row">
-    <div class="col"  style={{fontSize: "14px", fontWeight: "bold"}}>
-      
-    </div>
-    <div class="col" style={{fontSize: "14px", fontWeight: "bold"}}>
-    <input type="radio" aria-label="Radio button for following text input"/><span class="ml-2">Ambil di Toko</span><br/>
-    <span  style={{fontSize: "6px", marginLeft: "20px"}}>Ambil pesanan langsung di store yang dipilih</span>
-    </div>
-    <div class="col">
-    <span style={{color: "#00B25A", fontWeight: "bold", fontSize: "14px"}}>Stok Tersedia</span>
-    </div>
-  </div>
-<hr/> */}
 
 <div class="row">
     <div class="col"  style={{fontSize: "14px", fontWeight: "bold"}}>
@@ -216,6 +206,34 @@ export default function ItemDetails() {
     <button type="button" class="btn btn-primary mt-3 ml-3" style={{width: "200px", color: "#fff", fontWeight: "bold"}}>TAMBAH KE BAG</button>
     </div>
 <hr/>
+<div>
+  <div className="lokasi d-flex">
+    <div className="image mt-1">
+      <img src={IconLokasi} style={{ width: 20 }} alt="" />
+    </div>
+    <div className="wrapper-right align-self-center" style={{ lineHeight: 1 }}>
+      <span className="ml-2" style={{
+        fontSize: 12,
+        fontWeight: "normal",
+        textAlign:"justift",
+      }}
+      >DKI Jakarta,Kota Jakarta Barat,<br></br>
+      <div className="ml-2">Palmerah, Slipi</div>
+      </span>
+    </div>
+  </div>
+</div>
+<div className="delivery">
+  <img src={IconPengiriman} style={{ width: 20 }} alt="" />
+  <span className="ml-2" style={{ fontSize:12 }}>
+    Ekspres
+  </span>
+  <div className="" style={{ lineHeight: 1 }}>
+    <span style={{ fontSize: 12, marginLeft: 30, color: "#878787" }}>
+      2-7 hari 
+    </span>
+  </div>
+</div>
 
 <div class="row">
     <div class="col">
@@ -265,23 +283,73 @@ export default function ItemDetails() {
  </div>
 
   </div>
-  <p>halooooooo</p>
+  <div class="fitur-produk" style={{marginTop: "-250px", fontSize: "14px", fontFamily: "effra,Helvetica,Arial,sans-serif"}}>
+    <h6 style={{fontWeight:"bold"}}>Fitur Produk</h6>
+    <li>Print/Scan/Copy</li>
+    <li>Wi-Fi & Wi-Fi Direct</li>
+    <li>Epson Connect Enabled</li>
+    <li>Tinta 003 (CMYK)</li>
+  </div>
+  <div class="pelayanan-produk mt-5" style={{fontSize: "14px", fontFamily: "effra,Helvetica,Arial,sans-serif"}}>
+    <h6 style={{fontWeight:"bold"}}>Pelayanan Produk</h6>
+    <li>Garansi: Garansi Resmi 2 Tahun    <a href="#" style={{textDecoration: "none"}}>Info</a></li>
+    <li>15 hari Pengembalian Produk    <a href="#" style={{textDecoration: "none"}}>Info</a></li>
+  </div>
+</div>
+
+        </div>
+
+  {/* Navs */}
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{backgroundColor: "#0095DA"}}>
+  <li class="nav-item" role="presentation ml-4">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item" role="presentation" style={{color: "white"}}>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <h6>Epson L3150 EcoTank WiFi Multifungsi Printer</h6>
+    <p class="mt-3"style={{fontSize: "16px"}}>Setelah sukses dalam menghadirkan printer pendahulunya, kali ini Epson kembali memperkenalkan mesin pencetak series Epson L3150. Produk terbarunya kali ini, mampu memberikan hasil pencetakan yang lebih cepat dengan kualitas yang tajam. Bahkan, printer Epson diklaim bisa menghasilkan cetakan hingga 7500 untuk dokumen berwarna dan 4500 halaman hitam-putih. Disisi lain, desain tangki yang terintegrasi juga memungkinkan Anda bisa melakukan pengisian tinta printer tanpa khawatir tertumpah. </p>
+    <img src={L3150} alt="epson" class="mt-3"style={{width: "560px", heigt: "279px"}}/>
+    <h4 class="mt-3">Handal dalam Kualitas & Kecepatan Cetak Dokumen </h4>
+    <p class="mt-3"style={{fontSize: "16px"}}>Agar menjadikannya produk yang bisa di andalkan dalam melakukan pencetakan dokumen dengan hasil yang jelas dan bisa dilakukan secara cepat. Maka Epson L3150 Printer telah dilengkapi resolusi cetak hingga 5760 dpi guna menghasilkan cetakan berkualitas tinggi. Apalagi kemampuan kecepatan yang dimiliki yakni 10 ipm untuk halaman hitam – putih dan 5.0ipm untuk dokumen berwarna memungkin printer Epson bisa dipercaya. </p>
+    <img src={Printer} alt="epson"style={{width: "560px", heigt: "256px"}}/>
+    <h4>Handal dalam Kualitas & Kecepatan Cetak Dokumen </h4>
+    <p style={{fontSize: "16px"}}>Sepertinya sang produsen menghadirkan inovasi terbaru pada series Epson L3150 Printer. Dimana, produk ini telah dilengkapinya teknologi nirkabel yang tentu memudahkan Anda dalam melakukan pencetakan melalui ponsel Anda. Ditambah lagi adanya teknologi Wi-Fi Direct memungkinkan Anda untuk menghubungkan hingga 4 perangkat printer tanpa sebuah router. Sebagai pelengkap, mesin pencetak Epson juga telah kompatibel dengan Google Cloud Print yang mencetak langsung dari smartphone Android, table atau PC menggunakan akun Google Anda.</p>
+    <img src={Epson} alt="epson"style={{width: "560px", heigt: "256px"}}/>
+    <p class="mt-3"style={{fontSize: "16px", fontWeight: "bold"}}>Spesifikasi :</p>
+    <p style={{fontSize: "16px", fontWeight: "bold"}}>Print :</p>
+    <li>Direction : Bi-directional</li>
+    <li>Printing Language : ESC/P-R</li>
+    <li>Resolution : 5760x1440 dpi</li>
+    <li>Speed (Draft, A4) : Up to 33ppm (black) / 15ppm (Color)</li>
+    <li>Speed (ISO 24734, A4, Simplex) : Up to 10ipm (black) / 5ipm (Color)</li>
+    <p class="mt-3"style={{fontSize: "16px", fontWeight: "bold"}}>Scan :</p>
+    <li>Sensor : CIS Optical</li>
+    <li>Resolution : 1200x2400 dpi Speed (Flatbed 200dpi) : 11sec (Black) / 28sec (Color)</li>
+    <p class="mt-3"style={{fontSize: "16px", fontWeight: "bold"}}>Copy :</p>
+    <li>Speed (ISO 29183, A4, Simplex) : Up to 7.7ipm (Black) / 3.8ipm (Color)</li>
+    <li>Max Resolution : 600x600 dpi</li>
+    <li>Max Size : A4, Letter</li>
+    <li>Ukuran Kertas : Legal Indian-Legal (215 x 345 mm) Letter, A4 16K (195 x 270 mm) B5, A5, B6, A6 Hagaki (100 x 148 mm) Envelope</li>
+   <ul  class="mt-5" style={{boxSizing: "border-box"}}>
+     <li>
+       <span>
+         SKU Number
+       </span>
+       <span>	MYA-25532-00266</span>
+     </li>
+   </ul>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
 </div>
 
         </div>
         </div>
-        </div>
-    )
-=======
-import React from "react";
-
-export default function ItemDetails({ data, props }) {
-	return (
-		<div>
-			<div className="container mt-5">
-				<h4>Item Details</h4>
-			</div>
-		</div>
-	);
->>>>>>> 98b45861cdccb9cbbd8fd34972e8c880bcaf75e7
-}
+    )}
