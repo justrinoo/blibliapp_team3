@@ -6,17 +6,9 @@ import CategoryItem from "../parts/Category";
 import Discover from "../parts/Discover";
 import PromoLainya from "../parts/PromoLainya";
 import Footer from "../parts/Footer";
-import Axios from "axios";
+import { getUser, removeUserSession } from "../utils/Common";
 import DataLandingPages from "../data/LandingBlibli.json";
-export const LandingPages = () => {
-	const API_URL = "http://localhost:3000/v1/api/blibli";
-	const [dataLanding, setDataLanding] = useState([]);
-
-	useEffect(() => {
-		Axios.get(`${API_URL}`).then((res) => {
-			setDataLanding(res.data);
-		});
-	}, []);
+export const LandingPages = (props) => {
 	return (
 		<>
 			<Header data={DataLandingPages.Header} />
