@@ -2,34 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./assets/scss/style.scss";
 
 import LandingPages from "./pages/LandingPages";
-<<<<<<< HEAD
 // import "./assets/scss/style.scss";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import { LandingApiPage } from "./api/LandingPageApi";
-import Login from "./pages/Sign/Login";
+
 import Example from "./elements/Form/InputText/index";
-import ItemDetails from "./parts/ItemDetails";
-export default class App extends Component {
-	render() {
-		return (
-			<>
-				<Router>
-					<Route exact component={LandingPages} path="/" />
-					<Route component={Login} path="/login" />
-					<Route component={ItemDetails} path={`/itemdetails`} />
-				</Router>
-			</>
-		);
-	}
-=======
 import Cart from "./parts/Cart";
 import Login from "./parts/Sign/Login";
 import ItemDetails from "./parts/ItemDetails";
-
 import "./assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // import { LandingApiPage } from "./api/LandingPageApi";
-
 import axios from "axios";
 
 // import Example from "./elements/Form/InputText/index";
@@ -43,12 +25,11 @@ export default function App(props) {
 			<Router>
 				<Route exact path="/" component={LandingPages} />
 				<PublicRoute path="/login" component={Login} />
+				<PublicRoute path="/itemdetail/:id" component={ItemDetails} />
 				<PublicRoute path="/register" component={Daftar} />
-				<PrivateRoute path="/dashboard" component={LandingPages} />
-
-				<Route component={ItemDetails} path="/itemDetails" />
+				<PublicRoute path="/cart/:id" component={Cart} />
+				{/* <PrivateRoute path="/itemdetail/:id" component={ItemDetails} /> */}
 			</Router>
 		</>
 	);
->>>>>>> 98b45861cdccb9cbbd8fd34972e8c880bcaf75e7
 }

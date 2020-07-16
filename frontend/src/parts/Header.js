@@ -1,7 +1,7 @@
 // Header Component
 // navbar atas,navbar kategori, search input, login, daftar, icon keranjang
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/images/blibli-logo.svg";
 import Button from "../elements/Button";
 import PesonaLogo from "../assets/images/logo-pesona.svg";
@@ -11,20 +11,12 @@ import Computer from "../assets/images/computer-logo.svg";
 import Camera from "../assets/images/camera.svg";
 import LogoShop from "../assets/images/empty-shopping-bag.png";
 import Kategori from "../assets/images/kategori.svg";
-import { useHistory } from "react-router-dom";
+import ButtonSign from "../elements/ButtonSign/index";
 import Bag from "../assets/images/bag.svg";
 
-import { getUser, removeUserSession } from "../utils/Common";
 // import Button from "../elements/Button";
 
 export default function Header() {
-	const user = getUser();
-
-	let history = useHistory();
-	const handleLogout = () => {
-		removeUserSession();
-		history.push("/");
-	};
 	return (
 		<header className="spicing-sm">
 			<nav
@@ -51,7 +43,9 @@ export default function Header() {
 
 			<nav className="navbar navbar-menu navbar-expand-lg navbar-light blue">
 				<div className="container">
-					<img src={Logo} alt="Blibli" width={114} />
+					<Button type="link" href={`/`} className="navbar-brand">
+						<img src={Logo} alt="Blibli" className="img-fluid" width={114} />
+					</Button>
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -188,7 +182,6 @@ export default function Header() {
 								<img src={Bag} alt="" />
 								<span className="ml">Bag</span>
 							</p>
-							<small className="text-white">{user}</small>
 
 							<div
 								className="modal fade"
@@ -226,25 +219,7 @@ export default function Header() {
 							</div>
 
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item">
-									<Button
-										Button
-										type="link"
-										href={`/login`}
-										className="btn border-white  text-white mr-3"
-									>
-										Masuk
-									</Button>
-								</li>
-								<li className="nav-item">
-									<Button
-										type="link"
-										href={`/register`}
-										className="btn btn-primary bg-white text-primary"
-									>
-										Daftar
-									</Button>
-								</li>
+								<ButtonSign />
 							</ul>
 						</div>
 					</div>

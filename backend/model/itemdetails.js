@@ -8,7 +8,7 @@ module.exports = {
 				values: [id],
 			},
 			function (err, result) {
-				callback(err, result[0]);
+				callback(err, result);
 			}
 		);
 	},

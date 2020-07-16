@@ -1,8 +1,8 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 const Sellers = require("../model/sellerproducts");
 
-app.get("/v1/api/blibli/product", function (req, res, next) {
+router.get("/v1/api/blibli/product", function (req, res, next) {
 	let body;
 	if (!req.query.searchKey) {
 		body = { searchKey: "" };
@@ -11,11 +11,11 @@ app.get("/v1/api/blibli/product", function (req, res, next) {
 	}
 	Sellers.ListProduct(body, function (err, result) {
 		if (err) throw console.log("error when fetching data lisproduct", err);
-		res.send(result);
+		res.status(200).json(result);
 	});
 });
 
-app.post("/v1/api/blibli/product", (req, res) => {
+router.post("/v1/api/blibli/product", (req, res) => {
 	const { body } = req;
 	Sellers.CreateProduct({ ...body }, (err, result) => {
 		if (err) throw err;
@@ -23,11 +23,11 @@ app.post("/v1/api/blibli/product", (req, res) => {
 			console.log("Maaf data sudah ada");
 			res.send("Sorry data already exist");
 		}
-		res.send(result);
+		res.status(200).json(result);
 	});
 });
 
-app.put("/v1/api/blibli/product/:id", (req, res) => {
+router.put("/v1/api/blibli/product/:id", (req, res) => {
 	let productId = req.params.id;
 	const { body } = req;
 	Sellers.UpdateProduct(productId, body, (err, result) => {
@@ -39,11 +39,11 @@ app.put("/v1/api/blibli/product/:id", (req, res) => {
 			res.send("Sorry product already exist");
 		}
 		console.log("Product Updated..");
-		res.send(result);
+		res.status(200).json(result);
 	});
 });
 
-app.delete("/v1/api/blibli/product/:id", (req, res) => {
+router.delete("/v1/api/blibli/product/:id", (req, res) => {
 	const SellerId = req.params.id;
 	Sellers.DeleteProduct(SellerId, (err, result) => {
 		if (err)
@@ -54,7 +54,7 @@ app.delete("/v1/api/blibli/product/:id", (req, res) => {
 			res.send("Sorry product not found");
 		}
 		console.log("Product Deleted..");
-		res.send(result);
+		res.status(200).json(result);
 	});
 });
-module.exports = app;
+module.exports = router;

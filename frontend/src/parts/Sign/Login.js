@@ -7,6 +7,7 @@ import IcGoogle from "../../assets/images/icons/IconGoogle.svg";
 import IcFacebook from "../../assets/images/icons/Iconfacebook.svg";
 import propTypes from "prop-types";
 import IcMail from "../../assets/images/icons/mail.svg";
+import ButtonSign from "../../elements/ButtonSign/index";
 import IcPassword from "../../assets/images/icons/password.svg";
 import Axios from "axios";
 import { setUserSession } from "../../utils/Common";
@@ -16,6 +17,7 @@ export default function Login({ props }) {
 	const [loading, setLoading] = useState(false);
 	const email = useFormInput("");
 	const password = useFormInput("");
+	const [isLogin, setIslogin] = useState(false);
 	const [error, setError] = useState(null);
 
 	// handle button click of login form
@@ -27,12 +29,14 @@ export default function Login({ props }) {
 			password: password.value,
 		})
 			.then((response) => {
+				setIslogin(true);
 				setLoading(false);
 				console.log("success data", response.data.result);
 				setUserSession(
 					response.data.result.remember_token,
 					response.data.result.email
 				);
+
 				history.push("/");
 			})
 			.catch((error) => {
