@@ -10,6 +10,7 @@
     "dotenv-safe": "^8.2.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-alice-carousel": "^1.19.3",
     "react-compound-timer": "^1.2.0",
     "react-dom": "^16.13.1",
     "react-items-carousel": "^2.8.0",

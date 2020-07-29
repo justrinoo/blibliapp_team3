@@ -6,29 +6,28 @@ import LandingPages from "./pages/LandingPages";
 import { LandingApiPage } from "./api/LandingPageApi";
 
 import Example from "./elements/Form/InputText/index";
-import Cart from "./parts/Cart";
+import Checkout from "./parts/Checkout";
+
 import Login from "./parts/Sign/Login";
 import ItemDetails from "./parts/ItemDetails";
+import Cart from "./parts/Cart";
 import "./assets/scss/style.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import { LandingApiPage } from "./api/LandingPageApi";
-import axios from "axios";
 
 // import Example from "./elements/Form/InputText/index";
 import PrivateRoute from "./utils/PrivateRoute";
 import PublicRoute from "./utils/PublicRoutes";
 import Daftar from "./parts/Sign/Daftar";
 
-export default function App(props) {
+export default function App() {
 	return (
 		<>
 			<Router>
 				<Route exact path="/" component={LandingPages} />
-				<PublicRoute path="/login" component={Login} />
-				<PublicRoute path="/itemdetail/:id" component={ItemDetails} />
-				<PublicRoute path="/register" component={Daftar} />
-				<PublicRoute path="/cart/:id" component={Cart} />
-				{/* <PrivateRoute path="/itemdetail/:id" component={ItemDetails} /> */}
+				<Route path="/login" component={Login} />
+				<Route path="/itemdetail/:id" component={ItemDetails} />
+				<Route path="/register" component={Daftar} />
+				<Route path="/cart/:id" component={Cart} />
 			</Router>
 		</>
 	);

@@ -1,7 +1,7 @@
 // Header Component
 // navbar atas,navbar kategori, search input, login, daftar, icon keranjang
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../assets/images/blibli-logo.svg";
 import Button from "../elements/Button";
 import PesonaLogo from "../assets/images/logo-pesona.svg";
@@ -13,14 +13,47 @@ import LogoShop from "../assets/images/empty-shopping-bag.png";
 import Kategori from "../assets/images/kategori.svg";
 import ButtonSign from "../elements/ButtonSign/index";
 import Bag from "../assets/images/bag.svg";
+import Axios from "axios";
 
 // import Button from "../elements/Button";
 
 export default function Header() {
+	let API = "http://localhost:3000/v1/api/blibli";
+	const [getData, setGetData] = useState([]);
+	const [searchKey, setSearchKey] = useState("");
+
+	useEffect(() => {
+		Axios.get(`${API}`)
+			.then((res) => {
+				setGetData(res.data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	});
+	const handleSearch = () => {
+		Axios.get(`${API}?searchKey=${searchKey}`)
+			.then((res) => {
+				setGetData(res.data);
+			})
+			.catch((err) => {
+				console.log("Error Handle Search", err);
+			});
+	};
+	const handleClearSearch = () => {
+		setSearchKey("");
+		Axios.get(`${API}?searchKey=`)
+			.then((res) => {
+				setGetData(res.data);
+			})
+			.catch((err) => {
+				console.log("Error Handle Search", err);
+			});
+	};
 	return (
 		<header className="spicing-sm">
 			<nav
-				className="navbar navbar-expand-lg navbar-light navbar-text"
+				className="navbar navbar-expand-lg navbar-light navbar-text "
 				style={{ height: "30px" }}
 			>
 				<div className="container">
@@ -41,7 +74,7 @@ export default function Header() {
 				</div>
 			</nav>
 
-			<nav className="navbar navbar-menu navbar-expand-lg navbar-light blue">
+			<nav className="navbar navbar-menu navbar-expand-lg navbar-light blue ">
 				<div className="container">
 					<Button type="link" href={`/`} className="navbar-brand">
 						<img src={Logo} alt="Blibli" className="img-fluid" width={114} />
@@ -163,11 +196,15 @@ export default function Header() {
 							</div>
 							<input
 								className="form-control my-0 py-1"
+								onChange={(e) => setSearchKey(e.target.value)}
 								style={{ borderRadius: "0px" }}
+								value={searchKey}
 								type="text"
 								placeholder="Kamu lagi cari apa?"
 								aria-label="Search"
 							/>
+							<button onClick={handleSearch}>Search</button>
+							<button onClick={handleClearSearch}>Clear</button>
 						</div>
 
 						<div

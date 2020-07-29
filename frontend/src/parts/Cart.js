@@ -108,18 +108,7 @@ export const Cart = (props) => {
 				</div>
 			</div>
 
-			<div class="mt-5">
-				<CategoryItem
-					dataRekomendasi={DataLandingPages.ProdukRekomendasi}
-					dataNewNormal={DataLandingPages.NewNormal}
-					dataConsumerGoods={DataLandingPages.ConsummerGoods}
-					dataLifeStyle={DataLandingPages.LifeStyle}
-					dataGadgetAksesoris={DataLandingPages.GadgetAndAksesoris}
-					dataOtomotif={DataLandingPages.Otomotif}
-					dataVoucher={DataLandingPages.VoucherAndTravel}
-					dataHomeLiving={DataLandingPages.HomeAndLiving}
-				/>
-			</div>
+			<div class="mt-5"></div>
 
 			<div class="mt-5">
 				<Footer />

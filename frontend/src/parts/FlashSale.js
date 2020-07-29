@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from "react";
+import AliceCarousel from "react-alice-carousel";
 import FlashSaleIcon from "../assets/images/icons/flashsale-ic.svg";
 import Timer from "react-compound-timer";
 import { Link } from "react-router-dom";
 import Button from "../elements/Button";
 import axios from "axios";
 
-const FlashSale = () => {
-	const [itemdata, setData] = useState([]);
+export default function FlashSale({ data }) {
 	let API = "http://localhost:3000/v1/api/blibli";
+	const [itemdata, setData] = useState([]);
 	useEffect(() => {
 		axios.get(`${API}`).then((res) => {
 			console.log(res.data);
 			setData(res.data);
 		});
 	}, []);
+	const handleOnDragStart = (e) => e.preventDefault();
 	return (
 		<section className="jumbotron img-fluid mt-4">
 			<div className="container ">
@@ -71,6 +73,7 @@ const FlashSale = () => {
 											<img
 												src={ItemFlashSale.gambar}
 												className="img-fluid"
+												onDragStart={handleOnDragStart}
 												alt="FlashSaleImage"
 											/>
 											<div className="card-body ">
@@ -83,9 +86,9 @@ const FlashSale = () => {
 													{ItemFlashSale.harga}
 												</p>
 												<p className="card-text text-disabled text-gray">
-													<del>{ItemFlashSale.potonganharga}</del>{" "}
+													<del>{ItemFlashSale.diskon}</del>{" "}
 													<span className="text-danger">
-														{ItemFlashSale.diskon}
+														{ItemFlashSale.potonganharga}
 													</span>
 												</p>
 
@@ -109,6 +112,4 @@ const FlashSale = () => {
 			</div>
 		</section>
 	);
-};
-
-export default FlashSale;
+}
