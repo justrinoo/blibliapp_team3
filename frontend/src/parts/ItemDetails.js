@@ -7,19 +7,30 @@ import Printer from '../assets/images/printer1.jpg';
 import Heart from '../assets/images/heart.png';
 import Facebook from '../assets/images/facebook.png';
 import Twitter from '../assets/images/twitter.png';
-import IconLokasi from '../assets/images/location.png';
-import IconPengiriman from '../assets/images/truck.png';
 import Email from '../assets/images/email.png';
 import Discount from '../assets/images/price.png';
-import L3150 from '../assets/images/l3150.jpg';
-import Epson from '../assets/images/epsonwifi.jpg';
-
+// import L3150 from '../assets/images/l3150.jpg';
+import Epson from '../assets/images/epson.jpg';
 
 export default function ItemDetails() {
   const [count, setCount] = useState(1);
     return (
         <div>
             <Header/>
+            <div class="card" style={{marginLeft:"1160px"}}>
+  <div class="card-header" style={{backgroundColor:"white"}}>
+    <p class="card-text" style={{opacity: "0.5"}}>Dijual & disediakan oleh</p>
+    <a href="#" style={{textDecoration: "none"}} ><b>Mystudionotebookjakarta</b></a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary mt-3 ml-3" style={{width: "130px", color: "#fff", fontWeight: "bold"}}>+ Ikuti</button>
+    <button type="button" class="btn btn-primary mt-3 ml-3" style={{width: "130px", color : "#fff", fontWeight: "bold"}}>Kunjungi</button>
+    </div>
+</div>
             <div class="container">
             <nav aria-label="breadcrumb" className="mt-5 " >
   <ol class="breadcrumb " style={{backgroundColor: "#eee"}}>
@@ -97,7 +108,7 @@ export default function ItemDetails() {
       <span><a href="#" style={{textDecoration: "none", fontSize: "8.5px"}}>41 penawaran lain mulai dari Rp2.655.000</a></span>
     </div>
     <div class="col">
-      
+
     </div>
   </div>
 </div>
@@ -206,34 +217,6 @@ export default function ItemDetails() {
     <button type="button" class="btn btn-primary mt-3 ml-3" style={{width: "200px", color: "#fff", fontWeight: "bold"}}>TAMBAH KE BAG</button>
     </div>
 <hr/>
-<div>
-  <div className="lokasi d-flex">
-    <div className="image mt-1">
-      <img src={IconLokasi} style={{ width: 20 }} alt="" />
-    </div>
-    <div className="wrapper-right align-self-center" style={{ lineHeight: 1 }}>
-      <span className="ml-2" style={{
-        fontSize: 12,
-        fontWeight: "normal",
-        textAlign:"justift",
-      }}
-      >DKI Jakarta,Kota Jakarta Barat,<br></br>
-      <div className="ml-2">Palmerah, Slipi</div>
-      </span>
-    </div>
-  </div>
-</div>
-<div className="delivery">
-  <img src={IconPengiriman} style={{ width: 20 }} alt="" />
-  <span className="ml-2" style={{ fontSize:12 }}>
-    Ekspres
-  </span>
-  <div className="" style={{ lineHeight: 1 }}>
-    <span style={{ fontSize: 12, marginLeft: 30, color: "#878787" }}>
-      2-7 hari 
-    </span>
-  </div>
-</div>
 
 <div class="row">
     <div class="col">
@@ -302,20 +285,55 @@ export default function ItemDetails() {
   {/* Navs */}
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style={{backgroundColor: "#0095DA"}}>
   <li class="nav-item" role="presentation ml-4">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="pills-deskripsi-tab" data-toggle="pill" href="#pills-deskripsi" role="tab" aria-controls="pills-deskripsi" aria-selected="true" style={{display: "table-cell",
+    width: "25%",
+    height: "50px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    color: "rgba(255, 255, 255, 0.6)",
+    fontWeight: "bold",
+    fontSize: "15px",
+    cursor: "pointer"}}>Deskripsi</a>
   </li>
   <li class="nav-item" role="presentation" style={{color: "white"}}>
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="pills-spesifikasi-tab" data-toggle="pill" href="#pills-spesifikasi" role="tab" aria-controls="pills-spesifikasi" aria-selected="false" style={{display: "table-cell",
+    width: "25%",
+    height: "50px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    color: "rgba(255, 255, 255, 0.6)",
+    fontWeight: "bold",
+    fontSize: "15px",
+    cursor: "pointer"}}>Spesifikasi</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+    <a class="nav-link" id="pills-diskusi-tab" data-toggle="pill" href="#pills-diskusi" role="tab" aria-controls="pills-diskusi" aria-selected="false" style={{display: "table-cell",
+    width: "25%",
+    height: "50px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    color: "rgba(255, 255, 255, 0.6)",
+    fontWeight: "bold",
+    fontSize: "15px",
+    cursor: "pointer"}}>Diskusi</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="pills-ulasan-tab" data-toggle="pill" href="#pills-ulasan" role="tab" aria-controls="pills-ulasan" aria-selected="false" style={{display: "table-cell",
+    width: "100px",
+    height: "50px",
+    verticalAlign: "middle",
+    textAlign: "center",
+    color: "rgba(255, 255, 255, 0.6",
+    fontWeight: "bold",
+    fontSize: "15px",
+    cursor: "pointer"}}>Ulasan</a>
   </li>
 </ul>
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  <div class="tab-pane fade show active" id="pills-deskripsi" role="tabpanel" aria-labelledby="pills-deskripsi-tab">
     <h6>Epson L3150 EcoTank WiFi Multifungsi Printer</h6>
     <p class="mt-3"style={{fontSize: "16px"}}>Setelah sukses dalam menghadirkan printer pendahulunya, kali ini Epson kembali memperkenalkan mesin pencetak series Epson L3150. Produk terbarunya kali ini, mampu memberikan hasil pencetakan yang lebih cepat dengan kualitas yang tajam. Bahkan, printer Epson diklaim bisa menghasilkan cetakan hingga 7500 untuk dokumen berwarna dan 4500 halaman hitam-putih. Disisi lain, desain tangki yang terintegrasi juga memungkinkan Anda bisa melakukan pengisian tinta printer tanpa khawatir tertumpah. </p>
-    <img src={L3150} alt="epson" class="mt-3"style={{width: "560px", heigt: "279px"}}/>
+    {/* <img src={L3150} alt="epson" class="mt-3"style={{width: "560px", heigt: "279px"}}/> */}
     <h4 class="mt-3">Handal dalam Kualitas & Kecepatan Cetak Dokumen </h4>
     <p class="mt-3"style={{fontSize: "16px"}}>Agar menjadikannya produk yang bisa di andalkan dalam melakukan pencetakan dokumen dengan hasil yang jelas dan bisa dilakukan secara cepat. Maka Epson L3150 Printer telah dilengkapi resolusi cetak hingga 5760 dpi guna menghasilkan cetakan berkualitas tinggi. Apalagi kemampuan kecepatan yang dimiliki yakni 10 ipm untuk halaman hitam – putih dan 5.0ipm untuk dokumen berwarna memungkin printer Epson bisa dipercaya. </p>
     <img src={Printer} alt="epson"style={{width: "560px", heigt: "256px"}}/>
@@ -346,10 +364,111 @@ export default function ItemDetails() {
      </li>
    </ul>
   </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  <div class="tab-pane fade" id="pills-spesifikasi" role="tabpanel" aria-labelledby="pills-spesifikasi-tab"></div>
+  <h7>Epson L3150 EcoTank WiFi Multifungsi Printer</h7>
+  <h4 class="mt-3">Spesifikasi Produk</h4>
+  <table class="table table-striped">
+  <tbody>
+    <tr>
+      <th scope="row">Input Tray #1</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Brand</th>
+      <td>Epson</td>
+    </tr>
+    <tr>
+      <th scope="row">Fungsi</th>
+      <td>Print,Scan,Copy</td>
+    </tr>
+    <tr>
+      <th scope="row">Tipe Printer</th>
+      <td>Lainnya</td>
+    </tr>
+    <tr>
+      <th scope="row">Maks.Besaran Kertas</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Resolusi Cetak</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Kecepatan Cetak B/W</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Kecepatan Cetak</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Tipe Koneksi</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Kesesuaian Sistem Operasi</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Input Tray #2</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Fitur Cetak</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Fitur Scan</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Fitur Copy</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Fitur Fax</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Tipe Tinta</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Fitur Tinta (B/W)</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Dimensi Produk</th>
+      <td>37.5x34.7x17.9cm</td>
+    </tr>
+    <tr>
+      <th scope="row">Berat</th>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">Kelengkapan Paket</th>
+      <td>Unit Printer,Kabel Power,Kabel USB,Tinta 003,Kartu Garansi,Buku Manual</td>
+    </tr>
+    <tr>
+      <th scope="row">Lain-lain</th>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <div class="tab-pane fade" id="pills-diskusi" role="tabpanel" aria-labelledby="pills-diskusi-tab"></div>
+  <h6>Epson L3150 EcoTank WiFi Multifungsi Printer</h6>
+  <p class="mt-3"style={{fontSize: "16px"}}>Forum ini hanya untuk pertanyaan seputar produk. Apabila Anda memiliki pertanyaan mengenai pengiriman, promo atau hal lain silakan chat langsung dengan Customer Care Blibli.com <a href="#" style={{textDecoration: "none"}}>disini</a> atau telepon ke nomor 08041871871</p>
+  <table class="table table-striped">
+  <tbody>
+    <tr>
+      <th scope="row">Tanyakan</th>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <div class="tab-pane fade" id="pills-ulasan" role="tabpanel" aria-labelledby="pills-ulasan-tab"></div>
 </div>
-
         </div>
         </div>
     )}
