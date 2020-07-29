@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "../elements/Button";
 import ItemsCarousel from "react-items-carousel";
 import Logo from "../assets/images/Banner-1.jpg";
 import Logo1 from "../assets/images/Banner-2.jpg";
@@ -33,6 +34,7 @@ export default function Hero() {
 				gutter={0}
 				leftChevron={
 					<button
+						type="link"
 						style={{
 							borderRadius: "100px",
 							backgroundColor: "transparent",
@@ -55,6 +57,7 @@ export default function Hero() {
 				}
 				rightChevron={
 					<button
+						type="link"
 						style={{
 							borderRadius: "100px",
 							backgroundColor: "transparent",
@@ -120,6 +123,7 @@ export default function Hero() {
 					gutter={0}
 					leftChevron={
 						<button
+							type="link"
 							style={{
 								borderRadius: "100px",
 								backgroundColor: "transparent",
@@ -142,6 +146,7 @@ export default function Hero() {
 					}
 					rightChevron={
 						<button
+							type="link"
 							style={{
 								borderRadius: "100px",
 								backgroundColor: "transparent",
@@ -177,7 +182,8 @@ export default function Hero() {
 							fontSize: "15px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{
 								textDecoration: "none",
@@ -198,7 +204,7 @@ export default function Hero() {
 								}}
 							/>
 							Semua
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -212,7 +218,8 @@ export default function Hero() {
 							fontSize: "13px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{
 								padding: "5px",
@@ -233,7 +240,7 @@ export default function Hero() {
 								}}
 							/>
 							Bliblimart
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -247,7 +254,8 @@ export default function Hero() {
 							fontSize: "12px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -268,8 +276,8 @@ export default function Hero() {
 									justifyContent: "center",
 								}}
 							/>
-							Handphone &Tablet
-						</a>
+							Handphone
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -283,7 +291,8 @@ export default function Hero() {
 							fontSize: "15px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -305,7 +314,7 @@ export default function Hero() {
 								}}
 							/>
 							Pulsa
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -319,7 +328,8 @@ export default function Hero() {
 							fontSize: "12px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -341,7 +351,7 @@ export default function Hero() {
 								}}
 							/>
 							Ticket & Voucher
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -355,7 +365,8 @@ export default function Hero() {
 							fontSize: "15px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -377,7 +388,7 @@ export default function Hero() {
 								}}
 							/>
 							Elektronik
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -391,7 +402,8 @@ export default function Hero() {
 							fontSize: "12px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -413,7 +425,7 @@ export default function Hero() {
 								}}
 							/>
 							Home & Living
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -427,7 +439,8 @@ export default function Hero() {
 							fontSize: "12px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -449,7 +462,7 @@ export default function Hero() {
 								}}
 							/>
 							Kesehatan & Kecantikan
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -463,7 +476,8 @@ export default function Hero() {
 							fontSize: "15px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -485,7 +499,7 @@ export default function Hero() {
 								}}
 							/>
 							Pesawat
-						</a>
+						</Button>
 					</div>
 					<div
 						className="box1"
@@ -499,7 +513,8 @@ export default function Hero() {
 							fontSize: "12px",
 						}}
 					>
-						<a
+						<Button
+							type="link"
 							href="#"
 							style={{ padding: "5px", textDecoration: "none", color: "black" }}
 						>
@@ -521,7 +536,7 @@ export default function Hero() {
 								}}
 							/>
 							Global Collection
-						</a>
+						</Button>
 					</div>
 				</ItemsCarousel>
 			</div>

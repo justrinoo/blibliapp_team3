@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import AliceCarousel from "react-alice-carousel";
 import FlashSaleIcon from "../assets/images/icons/flashsale-ic.svg";
 import Timer from "react-compound-timer";
 import { Link } from "react-router-dom";
 import Button from "../elements/Button";
+import axios from "axios";
+
 export default function FlashSale({ data }) {
+	let API = "http://localhost:3000/v1/api/blibli";
+	const [itemdata, setData] = useState([]);
+	useEffect(() => {
+		axios.get(`${API}`).then((res) => {
+			console.log(res.data);
+			setData(res.data);
+		});
+	}, []);
+	const handleOnDragStart = (e) => e.preventDefault();
 	return (
 		<section className="jumbotron img-fluid mt-4">
 			<div className="container ">
@@ -48,34 +60,35 @@ export default function FlashSale({ data }) {
 			</div>
 			<div className="container">
 				<div className="row row-cols-1 row-cols-sm-2 row-cols-md-5">
-					{data.map((ItemFlashSale, index) => {
+					{itemdata.map((ItemFlashSale, index) => {
 						return (
 							<div key={index} className="col-md">
-								<Button
-									type="link"
-									href={`/itemdetail/${ItemFlashSale.id}`}
-									className="text-decoration-none text-dark"
-								>
-									<div className="card-deck mt-4 " style={{ width: "100%" }}>
-										<div className="card" style={{ borderRadius: "20px" }}>
+								<div className="card-deck mt-4 " style={{ width: "100%" }}>
+									<div className="card" style={{ borderRadius: "20px" }}>
+										<Button
+											type="link"
+											href={`/itemdetail/${ItemFlashSale.id}`}
+											className="text-decoration-none text-dark"
+										>
 											<img
-												src={ItemFlashSale.imageUrls}
+												src={ItemFlashSale.gambar}
 												className="img-fluid"
+												onDragStart={handleOnDragStart}
 												alt="FlashSaleImage"
 											/>
 											<div className="card-body ">
 												<div className="card-item-title">
 													<span className="card-title ">
-														{ItemFlashSale.name}
+														{ItemFlashSale.namaproduk}
 													</span>
 												</div>
 												<p className="card-text text-orange font-weight-bold ">
-													{ItemFlashSale.price}
+													{ItemFlashSale.harga}
 												</p>
 												<p className="card-text text-disabled text-gray">
-													<del>{ItemFlashSale.sale}</del>{" "}
+													<del>{ItemFlashSale.diskon}</del>{" "}
 													<span className="text-danger">
-														{ItemFlashSale.discount}
+														{ItemFlashSale.potonganharga}
 													</span>
 												</p>
 
@@ -89,9 +102,9 @@ export default function FlashSale({ data }) {
 													></div>
 												</div>
 											</div>
-										</div>
+										</Button>
 									</div>
-								</Button>
+								</div>
 							</div>
 						);
 					})}

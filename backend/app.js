@@ -5,26 +5,30 @@ var cookieParser = require("cookie-parser");
 var session = require("express-session");
 var logger = require("morgan");
 var cors = require("cors");
-var indexRouter = require("./routes/index");
+var cartRouter = require("./routes/carts");
 var usersRouter = require("./routes/user");
 var itemRouter = require("./routes/itemdetails");
 var landingRouter = require("./routes/landingpage");
 var sellerProductRouter = require("./routes/sellerproducts");
-
+var dontenv = require("dotenv");
 var app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
-app.use(cors());
+// app.use(cookieParser(cookieParser(process.env.COOKIE_PARSER)));
+// app.use(authorization);
+app.use(
+	cors({
+		origin: true,
+	})
+);
 app.use(
 	session({
-		secret: "keyboard cat",
+		secret: "theenkeng about meems",
 		resave: true,
 		saveUninitialized: true,
 		cookie: {
@@ -32,8 +36,6 @@ app.use(
 		},
 	})
 );
-
-app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "public")));
 
 const User = require("./model/users");
@@ -52,16 +54,10 @@ const auth = function (req, res, next) {
 	});
 };
 
-app.use("/", indexRouter);
+app.use("/", cartRouter);
 app.use("/sellers", sellerProductRouter);
 app.use("/", landingRouter);
-app.use("/", itemRouter);
 app.use("/users", usersRouter);
-// app.use("/posts", auth, postsRouter);
-app.use((req, res, next) => {
-	res.header("Access-Control-Allow-Origin", "*");
-	next();
-});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

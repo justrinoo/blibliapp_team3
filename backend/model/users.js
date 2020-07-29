@@ -2,7 +2,7 @@ const conn = require("../config/index");
 const moment = require("moment");
 const crypto = require("crypto");
 module.exports = {
-	getData: async (body, callback) => {
+	auth: async (body, callback) => {
 		const { email, password } = body;
 		conn.query(
 			`SELECT * FROM users where email =  ? and password =  ?`,

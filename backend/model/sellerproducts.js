@@ -7,11 +7,12 @@ module.exports = {
 			console.log(body);
 			conn.query(
 				{
-					sql: "SELECT * FROM product",
+					sql: "SELECT * FROM sellerproducts",
 					values: [`%${searchKey}%`, `%${searchKey}%`],
 				},
 				(err, result) => {
-					if (err) throw console.log("Error when query list product", err);
+					if (err)
+						throw console.log("Error when query list sellerproducts", err);
 					callback(err, result);
 				}
 			);
@@ -34,7 +35,7 @@ module.exports = {
 			rating,
 		} = body;
 		conn.query(
-			`INSERT INTO product SET ?`,
+			`INSERT INTO sellerproducts SET ?`,
 			{
 				namaproduk,
 				gambar,

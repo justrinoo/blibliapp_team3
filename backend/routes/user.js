@@ -13,7 +13,7 @@ router.post("/v1/api/blibli/login", function (req, res) {
 		.update(body.password)
 		.digest("hex");
 
-	Users.getData({ ...body, password: hash }, function (err, result, fields) {
+	Users.auth({ ...body, password: hash }, function (err, result, fields) {
 		if (err) throw err;
 		req.session.email = result.email;
 		req.session.password = result.password;
